@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ToDoList by GYM</title>
+    <!-- 外接式css -->
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class = "header">
+            <div class="box">
+                <form action="javascript:newitem()" id="form">
+                    <!-- label标签：点文字相当于点元素 -->
+                    <label for="newinput" onclick="egg()">ToDoList</label>
+                    <!-- required：提交表单之前有必填字段 -->
+                    <input type="text" id="newinput" name="newinput" required="required" placeholder="Add ToDo"/>
+
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="content">
+            <h2>Todo<span id="todocount">0</span></h2>
+            <ol id="todolist" class="doing-box">
+            </ol>
+            <h2>Done<span id="donecount">0</span></h2>
+            <ul id="donelist">
+            </ul>
+        </div>
+    </section>
+
+    <!-- 外接式js -->
+    <script type="text/javascript" src="./handle.js"></script>
+
+</body>
+
+
+
+
+</html>
