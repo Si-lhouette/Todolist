@@ -78,7 +78,7 @@ function load(){
                 todocnt++;
             }
         }
-        //更新html内容
+        // 更新html内容
         todolist.innerHTML = todoString;
         donelist.innerHTML = doneString;
         donecount.innerHTML = donecnt;
